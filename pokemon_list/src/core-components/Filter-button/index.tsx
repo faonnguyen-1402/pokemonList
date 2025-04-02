@@ -13,15 +13,10 @@ function FilterButton({ text, handleClick }: FilterButtonProps) {
   return (
     <div className='pd-10'>
       <button
-        className='button'
-        data-active={isActive ? 'true' : 'false'}
+        className={`button ${isActive ? 'active' : ''}`}
         onClick={() => {
           setIsActive(!isActive);
           handleClick(text);
-        }}
-        style={{
-          backgroundColor: isActive ? '#7F1D1D' : 'white',
-          color: isActive ? 'white' : '#7F1D1D',
         }}
       >
         {text}

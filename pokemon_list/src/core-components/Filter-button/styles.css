@@ -12,6 +12,17 @@
   font-size: 16px;
   width: auto;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #7f1d1d;
+  color: white;
+}
+
+.button.active {
+  background-color: #7f1d1d;
+  color: white;
 }
 
 .pd-10 {
