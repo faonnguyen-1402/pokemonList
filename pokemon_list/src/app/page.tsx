@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 import { useCallback, useEffect, useState } from 'react';
@@ -46,7 +47,7 @@ export default function Home() {
       const urls = pokemonData.results.map((item: { url: string }) => item.url);
 
       const res = await Promise.all(
-        urls.map(async (item) => {
+        urls.map(async (item: any) => {
           const data = await fetch(item);
           const pokemonItem = await data.json();
           return {
@@ -110,7 +111,7 @@ export default function Home() {
         );
 
         const res = await Promise.all(
-          urls.map(async (item) => {
+          urls.map(async (item: any) => {
             const data = await fetch(item);
             const pokemonItem = await data.json();
             return {
