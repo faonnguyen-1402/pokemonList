@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  height: 45px;
+  border: solid 2px #7f1d1d;
+  background: white;
+  color: #7f1d1d;
+  font-weight: bolder;
+  font-size: 16px;
+  width: auto;
+  cursor: pointer;
+}
+
+.pd-10 {
+  padding: 8px;
+}
